@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+        .header {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .course-box {
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .course-box:nth-child(1) { background: linear-gradient(to right, #ff416c, #ff4b2b); }
+        .course-box:nth-child(2) { background: linear-gradient(to right, #ff0000, #cc0000); }
+        .course-box:nth-child(3) { background: linear-gradient(to right, #00c6ff, #0072ff); }
+        .course-box:nth-child(4) { background: linear-gradient(to right, #f7971e, #ffd200); }
+        .course-box:nth-child(5) { background: linear-gradient(to right, #34e89e, #0f3443); }
+        .course-box:nth-child(6) { background: linear-gradient(to right, #b24592, #f15f79); }
+        .course-box:nth-child(7) { background: linear-gradient(to right, #6a11cb, #2575fc); }
+        .course-box:nth-child(8) { background: linear-gradient(to right, #ff512f, #dd2476); }
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            background: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .nav-item {
+            text-align: center;
+            flex: 1;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .nav-item:hover {
+            background: #555;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">My Courses</div>
+        <div class="grid">
+            <a href="https://youtube.com/playlist?list=PLfJCFEmrw_PGp0-o5ZG_6sFiAZhyh0A3Y&si=7kp7eUWvO3hCNRIi" class="course-box">Recorded Video <span>>></span></a>
+            <a href="https://www.youtube.com/embed/live_stream?channel=UC6NrUmIs0yrrGc21BgXzCQg" class="course-box">Live <span>>></span></a>
+            <a href="https://generalgyan.in/online-gk-test-in-hindi/" class="course-box">Quiz <span>>></span></a>
+            <a href="https://drive.google.com/drive/folders/1BhhVG7zgQ38GAH6UdxHnOU8-G5ZSYmab" class="course-box">PDF Notes <span>>></span></a>
+            <a href="https://example.quicklinks.com" class="course-box">Quick Links <span>>></span></a>
+            <a href="https://app.objectivequestions.in/wp-content/uploads/Polytechnic-App.html" class="course-box">Polytechnic Course <span>>></span></a>
+            <a href="https://evidyarthe.blogspot.com/p/ncert-solution.html?m=1" class="course-box">E-Books <span>>></span></a>
+            <a href="https://example.about.com" class="course-box">About <span>>></span></a>
+        </div>
+    </div>
+    <div class="bottom-nav">
+        <div class="nav-item" onclick="location.href='index.html'">Home <span>🏠</span></div>
+        <div class="nav-item" onclick="location.href='courses.html'">Courses <span>📚</span></div>
+        <div class="nav-item" onclick="location.href='user.html'">User <span>👤</span></div>
+        <div class="nav-item" onclick="location.href='contact.html'">Contact <span>📞</span></div>
+    </div>
+</body>
+</html>
